@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".product_detail"
+    android:orientation="vertical"
+    android:background="@drawable/nen">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+
+        android:layout_alignParentTop="true">
+
+        <FrameLayout
+            android:layout_width="85dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/danhmuc" />
+        </FrameLayout>
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/lobsterregular"
+            android:gravity="center"
+            android:text="@string/tieude1"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+        <FrameLayout
+            android:layout_width="85dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/tim_kiem" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sanpham"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@id/header"
+        android:layout_marginTop="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="380dp"
+                android:layout_height="345dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/anh_lon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/anh_ctsp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="320dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="Girl trendy sweater"
+                    android:textColor="@color/black"
+                    android:textSize="27dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <FrameLayout
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/mau_ao">
+
+                    <ImageView
+                        android:id="@+id/mau1"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:background="#F8EFBA" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/mau_ao">
+
+                    <ImageView
+                        android:id="@+id/mau2"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:background="#F5F5DC" />
+                </FrameLayout>
+
+                <FrameLayout
+
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/mau_ao">
+
+                    <ImageView
+                        android:id="@+id/mau3"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_gravity="center"
+                        android:background="#B5B09D" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp">
+
+                <FrameLayout
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/ctdh">
+
+                    <TextView
+                        android:id="@+id/S"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/ribeyer"
+                        android:gravity="center"
+                        android:text="S"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ctdh">
+
+                    <TextView
+                        android:id="@+id/M"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/ribeyer"
+                        android:gravity="center"
+                        android:text="M"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ctdh">
+
+                    <TextView
+                        android:id="@+id/L"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/ribeyer"
+                        android:gravity="center"
+                        android:text="L"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ctdh">
+
+                    <TextView
+                        android:id="@+id/XL"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/ribeyer"
+                        android:gravity="center"
+                        android:text="XL"
+                        android:textColor="@color/black"
+                        android:textSize="16dp" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp">
+
+                <TextView
+                    android:id="@+id/cl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Chất liệu: Cotton + Polyester"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/qc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Quy cách: (đơn vị: cm)"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/sz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="SIZE: free size"
+                    android:textColor="@color/black"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/dv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:text="Length: 63CM bust: 112CM shoulder width: 38CM"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#C4C4C4"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_add_cart"
+                    android:layout_width="180dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:background="@color/black"
+                    android:text="ADD TO CART"
+                    android:textColor="@color/white" />
+                <TextView
+                    android:id="@+id/tv_gia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:text="đ 310.000"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_gia_cu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="bottom|right"
+                    android:text="@string/line1"
+                    android:textColor="@color/gia_cu"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black">
+
+        <FrameLayout
+            android:id="@+id/item1"
+            android:layout_width="103dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/sao2" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/item2"
+            android:layout_width="103dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bag1" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/item3"
+            android:layout_width="103dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/giohang2" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/item4"
+            android:layout_width="103dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/user2" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User"
+    android:background="@drawable/nen">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/lobsterregular"
+            android:gravity="center"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_infor"
+            android:layout_width="357dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_profile"
+            android:drawableRight="@drawable/next2"
+            android:gravity="left|center"
+            android:paddingLeft="30dp"
+            android:text="Infomation"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="357dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_profile"
+            android:drawableRight="@drawable/next2"
+            android:gravity="left|center"
+            android:paddingLeft="30dp"
+            android:text="Addresss"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_payment"
+            android:layout_width="357dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_profile"
+            android:drawableRight="@drawable/next2"
+            android:gravity="left|center"
+            android:paddingLeft="30dp"
+            android:text="Payment"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="357dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_profile"
+            android:drawableRight="@drawable/next2"
+            android:gravity="left|center"
+            android:paddingLeft="30dp"
+            android:text="Setting"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black">
+
+        <FrameLayout
+            android:id="@+id/item1"
+            android:layout_width="103dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/sao2" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/item2"
+            android:layout_width="103dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bag2" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/item3"
+            android:layout_width="103dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/giohang2" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/item4"
+            android:layout_width="103dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/user" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Project_NabiShop/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.17871621621621622" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/drawable/address_add.xml" value="0.17871621621621622" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/drawable/botron_login.xml" value="0.17871621621621622" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/drawable/botron_nut10dp.xml" value="0.17871621621621622" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/drawable/botron_nut10dp_white.xml" value="0.17871621621621622" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/drawable/btn_30dp.xml" value="0.17871621621621622" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/drawable/btn_profile.xml" value="0.17871621621621622" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/drawable/category.xml" value="0.17871621621621622" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/drawable/ctdh.xml" value="0.17871621621621622" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/drawable/customborder.xml" value="0.17871621621621622" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/drawable/drawable_shape.xml" value="0.17871621621621622" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/drawable/edt_add.xml" value="0.17871621621621622" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/drawable/ic_launcher_background.xml" value="0.17871621621621622" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/drawable/mau_ao.xml" value="0.17871621621621622" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/drawable/navigation.xml" value="0.17871621621621622" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/drawable/nut_trang.xml" value="0.17871621621621622" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/drawable/search.xml" value="0.17871621621621622" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_address1.xml" value="0.16824324324324325" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_address2.xml" value="0.144" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_bottom_nav.xml" value="0.16824324324324325" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_cart1.xml" value="0.16824324324324325" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_cart2.xml" value="0.2" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_category.xml" value="0.16824324324324325" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_dashboard2.xml" value="0.12" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_dress.xml" value="0.152" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_information.xml" value="0.16824324324324325" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_login.xml" value="0.176" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_nhap.xml" value="0.15912162162162163" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_pants.xml" value="0.16824324324324325" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_pay_order.xml" value="0.2" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_payment.xml" value="0.16824324324324325" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_product_detail.xml" value="0.176" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_search.xml" value="0.16824324324324325" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_shirt.xml" value="0.152" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_shoes.xml" value="0.16824324324324325" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_sign_up.xml" value="0.16824324324324325" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_user.xml" value="0.16824324324324325" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/activity_wishlist.xml" value="0.2" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/dashboard1_main.xml" value="0.128" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/item_sp_main.xml" value="0.176" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/listview_main.xml" value="0.16824324324324325" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/nav.xml" value="0.264" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/layout/sanpham_lv.xml" value="0.264" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/menu/menu_item.xml" value="0.16824324324324325" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.17871621621621622" />
+        <entry key="..\:/Project_NabiShop/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.17871621621621622" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

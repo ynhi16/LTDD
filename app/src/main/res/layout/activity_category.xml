@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".category"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp">
+        <FrameLayout
+            android:id="@+id/btn_back_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/back"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lobsterregular"
+            android:gravity="center"
+            android:text="Category"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="760dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/shirt"
+            android:layout_width="372dp"
+            android:layout_height="170dp"
+            android:layout_below="@id/header"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/category">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/lobsterregular"
+                android:text="Shirt"
+                android:textColor="@color/black"
+                android:textSize="36dp" />
+
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="170dp"
+                android:layout_gravity="right"
+                android:src="@drawable/lisa1" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/pants"
+            android:layout_width="372dp"
+            android:layout_height="170dp"
+            android:layout_below="@id/shirt"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/category">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/lobsterregular"
+                android:text="Pants"
+                android:textColor="@color/black"
+                android:textSize="36dp" />
+
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="170dp"
+                android:layout_gravity="right"
+                android:src="@drawable/lisa3" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/dress"
+            android:layout_width="372dp"
+            android:layout_height="170dp"
+            android:layout_below="@id/pants"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/category">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/lobsterregular"
+                android:text="Dress"
+                android:textColor="@color/black"
+                android:textSize="36dp" />
+
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="170dp"
+                android:layout_gravity="right"
+                android:src="@drawable/lisa2" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/shoes"
+            android:layout_width="372dp"
+            android:layout_height="170dp"
+            android:layout_below="@id/dress"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/category">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="@font/lobsterregular"
+                android:text="Shoes"
+                android:textColor="@color/black"
+                android:textSize="36dp" />
+
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="170dp"
+                android:layout_gravity="right"
+                android:src="@drawable/lisa4" />
+        </FrameLayout>
+    </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
