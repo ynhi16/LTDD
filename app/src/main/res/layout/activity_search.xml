@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".search"
+    android:background="@drawable/bg_timkiem">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp">
+        <FrameLayout
+            android:id="@+id/btn_back_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/back"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lobsterregular"
+            android:gravity="center"
+            android:text="Search"
+            android:textColor="@color/black"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="365dp"
+        android:layout_height="65dp"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/search"
+        android:drawableLeft="@drawable/timkiem_24"
+        android:drawablePadding="20dp"
+        android:hint="Enter search product"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <ListView
+        android:id="@+id/lv_sp"
+        android:layout_width="match_parent"
+        android:layout_height="690dp"
+        android:layout_below="@id/edt_search"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

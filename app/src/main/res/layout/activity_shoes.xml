@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Shoes"
+    android:orientation="vertical"
+    android:background="@drawable/nen">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+        <FrameLayout
+            android:id="@+id/img_back_shoes"
+            android:layout_width="85dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/back_white" />
+        </FrameLayout>
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/lobsterregular"
+            android:gravity="center"
+            android:text="Shoes"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+    </LinearLayout>
+    <ScrollView
+        android:id="@+id/sanpham"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@id/header"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lobsterregular"
+                android:text="Maybe you like"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"/>
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_horizontal">
+
+                <FrameLayout
+                    android:layout_width="185dp"
+                    android:layout_height="350dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:layout_width="156dp"
+                        android:layout_height="250dp"
+                        android:src="@drawable/anh1" />
+
+                    <TextView
+                        android:layout_width="156dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="250dp"
+                        android:text="Girl trendy sweater"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="85dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="300dp"
+                            android:text="đ 310.000"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="71dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="305dp"
+                            android:text="@string/line1"
+                            android:textColor="@color/gia_cu"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="185dp"
+                    android:layout_height="350dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:layout_width="156dp"
+                        android:layout_height="250dp"
+                        android:src="@drawable/anh2" />
+
+                    <TextView
+                        android:layout_width="156dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="250dp"
+                        android:text="Balbina Blouse and Dress"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="85dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="300dp"
+                            android:text="đ 350.000"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="71dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="305dp"
+                            android:text="@string/line2"
+                            android:textColor="@color/gia_cu"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="185dp"
+                    android:layout_height="350dp"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:layout_width="156dp"
+                        android:layout_height="250dp"
+                        android:src="@drawable/anh3" />
+
+                    <TextView
+                        android:layout_width="156dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="250dp"
+                        android:text="Girly classy clothes aesthetic"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="85dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="300dp"
+                            android:text="đ 220.000"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="71dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="305dp"
+                            android:text="@string/line3"
+                            android:textColor="@color/gia_cu"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="185dp"
+                    android:layout_height="350dp"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:layout_width="156dp"
+                        android:layout_height="250dp"
+                        android:src="@drawable/anh4" />
+
+                    <TextView
+                        android:layout_width="156dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="250dp"
+                        android:text="Converse chuck taylor all star"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="85dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="300dp"
+                            android:text="đ 550.000"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="71dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="305dp"
+                            android:text="@string/line4"
+                            android:textColor="@color/gia_cu"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="185dp"
+                    android:layout_height="350dp"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:layout_width="156dp"
+                        android:layout_height="250dp"
+                        android:src="@drawable/anh4" />
+
+                    <TextView
+                        android:layout_width="156dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="250dp"
+                        android:text="Converse chuck taylor all star"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="85dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="300dp"
+                            android:text="đ 550.000"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="71dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="305dp"
+                            android:text="@string/line4"
+                            android:textColor="@color/gia_cu"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="185dp"
+                    android:layout_height="350dp"
+                    android:layout_row="2"
+                    android:layout_column="0"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/customborder">
+
+                    <ImageView
+                        android:layout_width="156dp"
+                        android:layout_height="250dp"
+                        android:src="@drawable/anh4" />
+
+                    <TextView
+                        android:layout_width="156dp"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="250dp"
+                        android:text="Converse chuck taylor all star"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="85dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="300dp"
+                            android:text="đ 550.000"
+                            android:textColor="@color/black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="71dp"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="305dp"
+                            android:text="@string/line4"
+                            android:textColor="@color/gia_cu"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </FrameLayout>
+            </GridLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black">
+
+        <FrameLayout
+            android:id="@+id/item1"
+            android:layout_width="103dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/sao2" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/item2"
+            android:layout_width="103dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bag1" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/item3"
+            android:layout_width="103dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/giohang2" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/item4"
+            android:layout_width="103dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/user2" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

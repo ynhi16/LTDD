@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Project_NabiShop</string>
+    <string name="tieude1">Nabi Shop</string>
+    <string name="line1"> <strike>đ 470.000</strike> </string>
+    <string name="line2"><strike>đ 400.000</strike></string>
+    <string name="line3"><strike>đ 320.000</strike></string>
+    <string name="line4"><strike>đ 600.000</strike></string>
+    <string name="facebook_app_id">980784736122213</string>
+
+
+</resources>

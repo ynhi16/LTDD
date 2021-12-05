@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.complete.project_nabishop">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project_NabiShop">
+        <activity
+            android:name=".Pay_Order"
+            android:exported="true" />
+        <activity
+            android:name=".search"
+            android:exported="true" />
+        <activity
+            android:name=".Cart2"
+            android:exported="true" />
+        <activity
+            android:name=".wishlist"
+            android:exported="true" />
+        <activity
+            android:name=".Payment"
+            android:exported="true" />
+        <activity
+            android:name=".Address2"
+            android:exported="true" />
+        <activity
+            android:name=".Address1"
+            android:exported="true" />
+        <activity
+            android:name=".User"
+            android:exported="true" />
+        <activity
+            android:name=".Information"
+            android:exported="true" />
+        <activity
+            android:name=".Cart1"
+            android:exported="true" />
+        <activity
+            android:name=".product_detail"
+            android:exported="true" />
+        <activity
+            android:name=".Shoes"
+            android:exported="true" />
+        <activity
+            android:name=".Dress"
+            android:exported="true" />
+        <activity
+            android:name=".Pants"
+            android:exported="true" />
+        <activity
+            android:name=".Shirt"
+            android:exported="true" />
+        <activity
+            android:name=".category"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignUp"
+            android:exported="true" />
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".dashboard2"
+            android:exported="true" />
+        <activity
+            android:name=".DashBoard1"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

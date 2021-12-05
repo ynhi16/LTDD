@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout class="androidx.appcompat.app.AlertController$RecycleListView" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wishlist"
+    android:background="@drawable/nen">
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="@font/lobsterregular"
+            android:gravity="center"
+            android:text="Wishlist"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/sanpham"
+        android:layout_width="match_parent"
+        android:layout_height="484dp"
+        android:layout_below="@id/header"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:background="#F0EFEF"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp">
+
+                <ImageView
+                    android:layout_width="105dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/anh_wl" />
+
+                <LinearLayout
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="Girl trendy sweater"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/mau_ao">
+
+                            <ImageView
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:layout_gravity="center"
+                                android:background="#B5B09D" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/ctdh">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/ribeyer"
+                                android:gravity="center"
+                                android:text="M"
+                                android:textColor="@color/black"
+                                android:textSize="16dp" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="310.000 đ"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ellipsis" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fr1"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="70dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/them" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="#F0EFEF"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp">
+
+                <ImageView
+                    android:layout_width="105dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/anh_wl" />
+
+                <LinearLayout
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="Girl trendy sweater"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/mau_ao">
+
+                            <ImageView
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:layout_gravity="center"
+                                android:background="#B5B09D" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/ctdh">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/ribeyer"
+                                android:gravity="center"
+                                android:text="M"
+                                android:textColor="@color/black"
+                                android:textSize="16dp" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="310.000 đ"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ellipsis" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="70dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/them" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="#F0EFEF"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp">
+
+                <ImageView
+                    android:layout_width="105dp"
+                    android:layout_height="125dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/anh_wl" />
+
+                <LinearLayout
+                    android:layout_width="222dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="15dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="Girl trendy sweater"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/mau_ao">
+
+                            <ImageView
+                                android:layout_width="29dp"
+                                android:layout_height="29dp"
+                                android:layout_gravity="center"
+                                android:background="#B5B09D" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/ctdh">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/ribeyer"
+                                android:gravity="center"
+                                android:text="M"
+                                android:textColor="@color/black"
+                                android:textSize="16dp" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="center"
+                        android:text="310.000 đ"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ellipsis" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginTop="70dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/them" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/add_wl"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/sanpham"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_30dp"
+        android:text="Add all to cart"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black">
+
+        <FrameLayout
+            android:id="@+id/item1"
+            android:layout_width="103dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/sao1" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/item2"
+            android:layout_width="103dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bag2" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/item3"
+            android:layout_width="103dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/giohang2" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/item4"
+            android:layout_width="103dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:src="@drawable/user2" />
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>
