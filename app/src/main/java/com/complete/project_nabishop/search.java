@@ -1,6 +1,9 @@
 package com.complete.project_nabishop;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,44 +17,33 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ListView;
 
+import com.complete.project_nabishop.controller.APIService;
+import com.complete.project_nabishop.controller.Client;
+
 import java.util.ArrayList;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class search extends AppCompatActivity {
-    private ListView lv;
-    private ArrayList<SanPham_lv> arrayList;
-    private Adapte_SanPham adapter;
+    private Adapte_SanPham mAdapter;
     private EditText edt;
     private FrameLayout fr_back;
+    private RecyclerView recyclerView;
+    List<SanPham_Main> list = new ArrayList<>();
+    APIService apiService;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_search);
-        lv = (ListView) findViewById(R.id.lv_sp);
         edt = (EditText) findViewById(R.id.edt_search);
         fr_back =(FrameLayout) findViewById(R.id.btn_back_search);
-        arrayList = new ArrayList<>();
-        arrayList.add(new SanPham_lv("Girl trendy sweater", "310.000 đ",R.drawable.a0));
-        arrayList.add(new SanPham_lv("Dr Martens Holly Ribbon Flatform Shoes", "250.000 đ",R.drawable.a1));
-        arrayList.add(new SanPham_lv("Flower feet", "250.000đ",R.drawable.a3));
-        arrayList.add(new SanPham_lv("Balbina Blouse & Dress", "350.000 đ",R.drawable.a4));
-        arrayList.add(new SanPham_lv("Dr. Martens Jadon boots - White", "400.000 đ",R.drawable.a5));
-        arrayList.add(new SanPham_lv("Air Jordan 1 Pink", "780.000 ss",R.drawable.a9));
-        arrayList.add(new SanPham_lv("Collared Long-Sleeve Midi A-Line Dress", "320.000 đ",R.drawable.a7));
-        arrayList.add(new SanPham_lv("Nike Air Force 1", "600.000 đ",R.drawable.a10));
-
-        adapter = new Adapte_SanPham(search.this, R.layout.sanpham_lv,arrayList);
-        lv.setAdapter(adapter);
-
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                if(i == 0){
-                    Intent intent = new Intent(search.this, product_detail.class);
-                    startActivity(intent);
-                }
-            }
-        });
+        recyclerView = findViewById(R.id.ds_sp);
+        apiService= Client.getAPIService();
+        listar();
         fr_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -77,12 +69,39 @@ public class search extends AppCompatActivity {
          });
     }
     private void filter(String text){
-        ArrayList<SanPham_lv> filteredList = new ArrayList<>();
-        for (SanPham_lv item : arrayList){
-            if(item.getTen().toLowerCase().contains(text.toLowerCase())){
+        ArrayList<SanPham_Main> filteredList = new ArrayList<>();
+        for (SanPham_Main item : list){
+            if(item.getName().toLowerCase().contains(text.toLowerCase())){
                 filteredList.add(item);
             }
         }
-        adapter.filterList(filteredList);
+        mAdapter.filterList(filteredList);
+    }
+    public void listar(){
+        Call<List<SanPham_Main>> call=apiService.getSanPham();
+        call.enqueue(new Callback<List<SanPham_Main>>() {
+            @Override
+            public void onResponse(Call<List<SanPham_Main>> call, Response<List<SanPham_Main>> response) {
+                if(response.code()!=200){
+                    return;
+                }
+                List<SanPham_Main>data= response.body();
+                for (SanPham_Main sp:data){
+                    list.add(sp);
+                }
+                PutDataIntoRecyclerView(data);
+            }
+
+            @Override
+            public void onFailure(Call<List<SanPham_Main>> call, Throwable t) {
+
+            }
+        });
+    }
+
+    private void PutDataIntoRecyclerView(List<SanPham_Main> list) {
+        mAdapter = new Adapte_SanPham(this,list);
+        recyclerView.setLayoutManager(new LinearLayoutManager(    this));
+        recyclerView.setAdapter(mAdapter);
     }
 }

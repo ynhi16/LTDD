@@ -11,6 +11,10 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.complete.project_nabishop.controller.APIService;
+import com.complete.project_nabishop.controller.Client;
+
+import java.util.List;
 
 
 public class Login extends AppCompatActivity {
@@ -68,4 +72,6 @@ public class Login extends AppCompatActivity {
         view.setAlpha(v);
         view.animate().translationX(0).alpha(1).setDuration(800).setStartDelay(delay).start();
     }
+
+
 }

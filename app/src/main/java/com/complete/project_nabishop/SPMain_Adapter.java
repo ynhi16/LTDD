@@ -10,64 +10,52 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+
+import java.util.ArrayList;
 import java.util.List;
 
-public class SPMain_Adapter  extends RecyclerView.Adapter<SPMain_Adapter.SPViewHoder>{
+public class SPMain_Adapter  extends RecyclerView.Adapter<SPMain_Adapter.MyViewHolder> {
     private Context mContext;
     private List<SanPham_Main> mListSP;
 
-    public SPMain_Adapter(Context mContext) {
+    public SPMain_Adapter(Context mContext, List<SanPham_Main> mListSP) {
         this.mContext = mContext;
-    }
-
-    public void setData(List<SanPham_Main> list){
-        this.mListSP = list;
-        notifyDataSetChanged();
+        this.mListSP = mListSP;
     }
 
     @NonNull
     @Override
-    public SPViewHoder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_sp_main,parent,false);
-
-        return new SPViewHoder(view);
+    public SPMain_Adapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v;
+        LayoutInflater layoutInflater = LayoutInflater.from(mContext);
+        v = layoutInflater.inflate(R.layout.item_sp_main,parent,false);
+        return new MyViewHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull SPViewHoder holder, int position) {
-        SanPham_Main sp = mListSP.get(position);
-        if(sp == null){
-            return;
-        }
-
-        holder.imgsp.setImageResource(sp.getImg());
-        holder.ten.setText(sp.getName());
-        holder.gia.setText(sp.getGia());
-        holder.giacu.setText(sp.getGiacu());
+    public void onBindViewHolder(@NonNull SPMain_Adapter.MyViewHolder holder, int position) {
+        holder.title.setText(mListSP.get(position).getName());
+        holder.money.setText(String.valueOf(mListSP.get(position).getGia()));
+        //add hinh anh
+        Glide.with(mContext).load(mListSP.get(position).getImg()).into(holder.img);
     }
 
     @Override
     public int getItemCount() {
-        if(mListSP != null){
-            return  mListSP.size();
-
-        }
-        return 0;
+        return mListSP.size();
     }
+    public static class MyViewHolder extends RecyclerView.ViewHolder{
 
-
-    public class SPViewHoder extends RecyclerView.ViewHolder{
-        private ImageView imgsp;
-        private TextView ten, gia, giacu;
-
-        public SPViewHoder(@NonNull View itemView) {
+        TextView title;
+        TextView money;
+        ImageView img;
+        public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-
-            imgsp = itemView.findViewById(R.id.img);
-            ten = itemView.findViewById(R.id.tv_name);
-            gia = itemView.findViewById(R.id.tv_gia);
-            giacu = itemView.findViewById(R.id.tv_gia_cu);
-
+            title = itemView.findViewById(R.id.tv_name);
+            money = itemView.findViewById(R.id.tv_gia);
+            img = itemView.findViewById(R.id.img);
         }
     }
+
 }

@@ -1,69 +1,68 @@
 package com.complete.project_nabishop;
 
 import android.content.Context;
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.BaseAdapter;
-import android.widget.Filter;
-import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 
-public class Adapte_SanPham extends BaseAdapter {
 
-    private Context context;
-    private int layout;
-    private List<SanPham_lv> arrayList;
+public class Adapte_SanPham extends RecyclerView.Adapter<Adapte_SanPham.MyViewHolder> {
 
-    public Adapte_SanPham(Context context, int layout, List<SanPham_lv> arrayList) {
-        this.context = context;
-        this.layout = layout;
-        this.arrayList = arrayList;
+    private Context mContext;
+    private List<SanPham_Main> mListSP;
+
+    public Adapte_SanPham(Context mContext, List<SanPham_Main> mListSP) {
+        this.mContext = mContext;
+        this.mListSP = mListSP;
     }
 
-
+    @NonNull
     @Override
-    public int getCount() {
-        return arrayList.size();
-    }
-
-    @Override
-    public Object getItem(int i) {
-        return null;
+    public Adapte_SanPham.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v;
+        LayoutInflater layoutInflater = LayoutInflater.from(mContext);
+        v = layoutInflater.inflate(R.layout.sanpham_lv,parent,false);
+        return new Adapte_SanPham.MyViewHolder(v);
     }
 
     @Override
-    public long getItemId(int i) {
-        return 0;
+    public void onBindViewHolder(@NonNull Adapte_SanPham.MyViewHolder holder, int position) {
+        holder.title.setText(mListSP.get(position).getName());
+        holder.money.setText(String.valueOf(mListSP.get(position).getGia()));
+        //add hinh anh
+        Glide.with(mContext).load(mListSP.get(position).getImg()).into(holder.img);
     }
 
     @Override
-    public View getView(int i, View view, ViewGroup viewGroup) {
-    LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-    view = inflater.inflate(layout,null);
-    SanPham_lv sp = arrayList.get(i);
-    TextView tv1 = view.findViewById(R.id.name);
-    TextView tv2 = view.findViewById(R.id.gia);
-    ImageView img = view.findViewById(R.id.img_sp);
-
-    tv1.setText(sp.getTen());
-    tv2.setText(sp.getGia());
-    img.setImageResource(sp.getHinh());
-        return view;
+    public int getItemCount() {
+        return mListSP.size();
     }
-    public void filterList(ArrayList<SanPham_lv> filteredList){
-        arrayList = filteredList;
+    public static class MyViewHolder extends RecyclerView.ViewHolder{
+
+        TextView title;
+        TextView money;
+        ImageView img;
+        public MyViewHolder(@NonNull View itemView) {
+            super(itemView);
+            title = itemView.findViewById(R.id.name);
+            money = itemView.findViewById(R.id.gia);
+            img = itemView.findViewById(R.id.img_sp);
+        }
+    }
+    public void filterList(ArrayList<SanPham_Main> filteredList){
+        mListSP = filteredList;
         notifyDataSetChanged();
     }
 }

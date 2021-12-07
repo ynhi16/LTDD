@@ -1,22 +1,18 @@
 package com.complete.project_nabishop;
 
-public class SanPham_Main {
-    private int img;
-    private String name, gia,giacu ;
+import com.google.gson.annotations.SerializedName;
 
-    public SanPham_Main(int img,String name,String gia, String giacu ) {
-        this.img = img;
+public class SanPham_Main {
+    @SerializedName("tenSP")
+    private String name;
+    @SerializedName("donGia")
+    private int gia;
+    @SerializedName("tenHA")
+    private String img;
+
+    public SanPham_Main(String name, int gia, String img) {
         this.name = name;
         this.gia = gia;
-        this.giacu = giacu;
-    }
-
-
-    public int getImg() {
-        return img;
-    }
-
-    public void setImg(int img) {
         this.img = img;
     }
 
@@ -28,20 +24,19 @@ public class SanPham_Main {
         this.name = name;
     }
 
-    public String getGia() {
+    public int getGia() {
         return gia;
     }
 
-    public void setGia(String gia) {
+    public void setGia(int gia) {
         this.gia = gia;
     }
 
-    public String getGiacu() {
-        return giacu;
+    public String getImg() {
+        return img;
     }
 
-    public void setGiacu(String giacu) {
-        this.giacu = giacu;
+    public void setImg(String img) {
+        this.img = img;
     }
-
 }

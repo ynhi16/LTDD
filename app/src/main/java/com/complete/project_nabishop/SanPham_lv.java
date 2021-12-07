@@ -1,37 +1,42 @@
 package com.complete.project_nabishop;
 
+import com.google.gson.annotations.SerializedName;
+
 public class SanPham_lv {
-    private String ten;
-    private String gia;
-    private int hinh;
+    @SerializedName("tenSP")
+    private String name;
+    @SerializedName("donGia")
+    private int gia;
+    @SerializedName("tenHA")
+    private String img;
 
-    public SanPham_lv(String ten, String gia, int hinh) {
-        this.ten = ten;
+    public SanPham_lv(String name, int gia, String img) {
+        this.name = name;
         this.gia = gia;
-        this.hinh = hinh;
+        this.img = img;
     }
 
-    public String getTen() {
-        return ten;
+    public String getName() {
+        return name;
     }
 
-    public void setTen(String ten) {
-        this.ten = ten;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getGia() {
+    public int getGia() {
         return gia;
     }
 
-    public void setGia(String gia) {
+    public void setGia(int gia) {
         this.gia = gia;
     }
 
-    public int getHinh() {
-        return hinh;
+    public String getImg() {
+        return img;
     }
 
-    public void setHinh(int hinh) {
-        this.hinh = hinh;
+    public void setImg(String img) {
+        this.img = img;
     }
 }

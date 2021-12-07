@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="5dp">
+    android:layout_margin="20dp">
 
     <LinearLayout
         android:layout_width="185dp"
@@ -42,15 +42,7 @@
                 android:textSize="16dp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/tv_gia_cu"
-                android:layout_width="71dp"
-                android:layout_height="20dp"
-                android:layout_gravity="bottom"
-                android:layout_marginTop="5dp"
-                android:text="@string/line1"
-                android:textColor="@color/gia_cu"
-                android:textSize="14dp" />
+
         </LinearLayout>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

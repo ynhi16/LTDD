@@ -26,6 +26,7 @@
                 android:src="@drawable/danhmuc" />
         </FrameLayout>
         <TextView
+            android:id="@+id/tenshop"
             android:layout_width="240dp"
             android:layout_height="match_parent"
             android:fontFamily="@font/lobsterregular"
@@ -221,16 +222,13 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="17dp"
-                android:layout_marginRight="15dp"
                 android:orientation="vertical">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/ds_sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/recommend"
-                    />
+                    android:layout_below="@id/recommend" />
             </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
